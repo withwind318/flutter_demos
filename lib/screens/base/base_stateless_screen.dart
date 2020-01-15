@@ -14,6 +14,7 @@ abstract class BaseStatelessScreen extends StatelessWidget {
     return Scaffold(
       appBar: this.buildAppBar(context),
       body: this.buildSelfScrollBody(context) ?? SingleChildScrollView(child: this.buildBody(context)),
+      floatingActionButton: this.buildFloatingActionButton(context),
     );
   }
 
@@ -32,6 +33,10 @@ abstract class BaseStatelessScreen extends StatelessWidget {
     } else {
       return null;
     }
+  }
+
+  Widget buildFloatingActionButton(BuildContext context) {
+    return null;
   }
 
   //不需要添加滚动的界面

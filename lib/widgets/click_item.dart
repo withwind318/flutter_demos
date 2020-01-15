@@ -18,7 +18,7 @@ class ClickItem extends BaseStatelessWidget {
       child: Container(
         height: rpx(100),
         child: Padding(
-          padding: EdgeInsets.only(right: rpx(20)),
+          padding: EdgeInsets.only(left: rpx(30), right: rpx(20)),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[

@@ -7,7 +7,7 @@ class MyInheritedWidget extends InheritedWidget {
   MyInheritedWidget({@required this.value, @required Widget child}) : super(child: child);
 
   static MyInheritedWidget of(BuildContext context) {
-    return context.inheritFromWidgetOfExactType(MyInheritedWidget);
+    return context.dependOnInheritedWidgetOfExactType<MyInheritedWidget>();
   }
 
   @override
