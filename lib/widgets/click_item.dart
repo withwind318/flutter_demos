@@ -13,7 +13,7 @@ class ClickItem extends BaseStatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       splashColor: Colors.transparent,
-      highlightColor: AppColor.grayBackground,
+      highlightColor: AppColors.grayBackground,
       onTap: onTap,
       child: Container(
         height: rpx(100),
@@ -22,7 +22,7 @@ class ClickItem extends BaseStatelessWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
-              Text(title, style: TextStyle(color: AppColor.mainBlackText, fontSize: rpx(30))),
+              Text(title, style: TextStyle(color: AppColors.mainBlackText, fontSize: rpx(30))),
               Image.asset('assets/images/ic_go.png', width: rpx(16), height: rpx(30)),
             ],
           ),

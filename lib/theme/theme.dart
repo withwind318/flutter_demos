@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class AppColor {
+class AppColors {
   static const Color mainAppColor = const Color(0xff419bd6);
   static const Color secondaryAppColor = const Color(0xffED5429);
   static const Color grayBackground = const Color(0xfff4f4f4);
@@ -12,7 +12,7 @@ class AppColor {
   static const Color errorMsgColor = const Color(0xffE63939);
 }
 
-class AppDimen {
+class AppDimens {
   static const double screenPaddingHorRpx = 30;//页面左右padding
   static const double formFieldVerPaddingRpx = 20;
   static const double mainTextSizeRpx = 30;

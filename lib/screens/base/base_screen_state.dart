@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_demos/helpers/screen_helper.dart';
 
-abstract class BaseScreenState<T extends StatefulWidget> extends State<T>  {
+abstract class BaseScreenState<T extends StatefulWidget> extends State<T> {
   String title = "";
   bool hasAppbar = true;
   Color titleColor = Colors.black;
@@ -24,6 +24,7 @@ abstract class BaseScreenState<T extends StatefulWidget> extends State<T>  {
         backgroundColor: backgroundColor,
         appBar: this.buildAppBar(context),
         body: this.buildSelfScrollBody(context) ?? SingleChildScrollView(child: this.buildBody(context)),
+        floatingActionButton: this.buildFloatingActionButton(context),
       ),
     );
   }
@@ -49,6 +50,10 @@ abstract class BaseScreenState<T extends StatefulWidget> extends State<T>  {
     }
   }
 
+  Widget buildFloatingActionButton(BuildContext context) {
+    return null;
+  }
+
   //不需要添加滚动的界面
   Widget buildSelfScrollBody(BuildContext context) {
     return null;
@@ -58,5 +63,4 @@ abstract class BaseScreenState<T extends StatefulWidget> extends State<T>  {
   Widget buildBody(BuildContext context) {
     return null;
   }
-
 }

@@ -11,6 +11,7 @@ abstract class BaseStatelessScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    debugPrint('${this.toString()} build call');
     return Scaffold(
       appBar: this.buildAppBar(context),
       body: this.buildSelfScrollBody(context) ?? SingleChildScrollView(child: this.buildBody(context)),
