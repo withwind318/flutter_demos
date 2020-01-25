@@ -1,14 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_demos/helpers/screen_helper.dart';
+import 'package:flutter_demos/screens/base/base_stateful_screen.dart';
 
-abstract class BaseScreenState<T extends StatefulWidget> extends State<T> {
-  String title = "";
-  bool hasAppbar = true;
-  Color titleColor = Colors.black;
-  Color backgroundColor = Colors.white;
-  Color appBarBackgroundColor = Colors.white;
-  Color appBarIconColor = Colors.black;
+abstract class BaseScreenState<T extends BaseStatefulScreen> extends State<T> {
   List<Widget> actions = [];
 
   double rpx(double size) {
@@ -21,7 +16,7 @@ abstract class BaseScreenState<T extends StatefulWidget> extends State<T> {
     return WillPopScope(
       onWillPop: onWillPop,
       child: Scaffold(
-        backgroundColor: backgroundColor,
+        backgroundColor: Colors.white,
         appBar: this.buildAppBar(context),
         body: this.buildSelfScrollBody(context) ?? SingleChildScrollView(child: this.buildBody(context)),
         floatingActionButton: this.buildFloatingActionButton(context),
@@ -34,14 +29,14 @@ abstract class BaseScreenState<T extends StatefulWidget> extends State<T> {
   }
 
   Widget buildAppBar(BuildContext context) {
-    if (hasAppbar) {
+    if (widget.hasAppbar) {
       return PreferredSize(
         preferredSize: Size.fromHeight(rpx(88)),
         child: AppBar(
-          iconTheme: IconThemeData(color: appBarIconColor),
+          iconTheme: IconThemeData(color: Colors.black),
           centerTitle: true,
-          title: Text(this.title, style: TextStyle(color: titleColor)),
-          backgroundColor: appBarBackgroundColor,
+          title: Text(widget.title, style: TextStyle(color: Colors.black)),
+          backgroundColor: Colors.white,
           actions: this.actions,
         ),
       );

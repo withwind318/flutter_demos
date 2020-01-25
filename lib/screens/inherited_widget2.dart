@@ -5,6 +5,8 @@ import 'package:flutter_demos/screens/base/base_stateful_screen.dart';
 import 'package:flutter_demos/widgets/my_inherited_widget.dart';
 
 class InheritedWidget2 extends BaseStatefulScreen {
+  get title => 'InheritedWidget2';
+
   @override
   State<StatefulWidget> createState() {
     return _InheritedWidget2State();
@@ -12,8 +14,6 @@ class InheritedWidget2 extends BaseStatefulScreen {
 }
 
 class _InheritedWidget2State extends BaseScreenState<InheritedWidget2> {
-  String title = 'InheritedWidget2';
-
   @override
   Widget buildSelfScrollBody(BuildContext context) {
     MyInheritedWidget myInheritedWidget = MyInheritedWidget.of(context);

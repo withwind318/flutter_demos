@@ -4,18 +4,16 @@ import 'package:flutter_demos/screens/base/base_stateless_screen.dart';
 import 'package:provider/provider.dart';
 
 class ProviderDemo extends BaseStatelessScreen {
-  get title => "Provider Demo";
+  get title => "Provider demo";
+
   final counter = CounterModel();
 
   @override
   Widget buildSelfScrollBody(BuildContext context) {
-    return Provider<int>.value(
-      value: 0,
-      child: ChangeNotifierProvider.value(
-        value: counter,
-        child: Center(
-          child: MyWidget(),
-        ),
+    return ChangeNotifierProvider<CounterModel>.value(
+      value: counter,
+      child: Center(
+        child: MyWidget(),
       ),
     );
   }
@@ -33,7 +31,7 @@ class MyWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     print('MyWidget build');
-//    final _count = Provider.of<CounterModel>(context);
+    final _count = Provider.of<CounterModel>(context);
 //    return Text('${_count.value}', style: TextStyle(fontSize: 20));
     return Consumer<CounterModel>(
       builder: (context, CounterModel counter, child) {

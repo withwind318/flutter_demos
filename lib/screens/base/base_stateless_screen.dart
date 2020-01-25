@@ -3,6 +3,7 @@ import 'package:flutter_demos/helpers/screen_helper.dart';
 
 abstract class BaseStatelessScreen extends StatelessWidget {
   get hasAppbar => true;
+
   get title => '';
 
   double rpx(double size) {
@@ -20,7 +21,7 @@ abstract class BaseStatelessScreen extends StatelessWidget {
   }
 
   Widget buildAppBar(BuildContext context) {
-    if(hasAppbar) {
+    if (hasAppbar) {
       return PreferredSize(
         preferredSize: Size.fromHeight(rpx(88)),
         child: AppBar(
@@ -49,5 +50,4 @@ abstract class BaseStatelessScreen extends StatelessWidget {
   Widget buildBody(BuildContext context) {
     return null;
   }
-
 }
