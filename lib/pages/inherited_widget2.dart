@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:flutter_demos/screens/base/base_screen_state.dart';
-import 'package:flutter_demos/screens/base/base_stateful_screen.dart';
+import 'package:flutter_demos/pages/base/base_page_state.dart';
+import 'package:flutter_demos/pages/base/base_stateful_page.dart';
 import 'package:flutter_demos/widgets/my_inherited_widget.dart';
 
-class InheritedWidget2 extends BaseStatefulScreen {
+class InheritedWidget2 extends BaseStatefulPage {
   get title => 'InheritedWidget2';
 
   @override
@@ -13,7 +13,7 @@ class InheritedWidget2 extends BaseStatefulScreen {
   }
 }
 
-class _InheritedWidget2State extends BaseScreenState<InheritedWidget2> {
+class _InheritedWidget2State extends BasePageState<InheritedWidget2> {
   @override
   Widget buildSelfScrollBody(BuildContext context) {
     MyInheritedWidget myInheritedWidget = MyInheritedWidget.of(context);

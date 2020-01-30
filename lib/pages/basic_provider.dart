@@ -2,8 +2,8 @@ import 'dart:collection';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:flutter_demos/screens/base/base_screen_state.dart';
-import 'package:flutter_demos/screens/base/base_stateful_screen.dart';
+import 'package:flutter_demos/pages/base/base_page_state.dart';
+import 'package:flutter_demos/pages/base/base_stateful_page.dart';
 
 class InheritedProvider<T> extends InheritedWidget {
   final T data;
@@ -119,14 +119,14 @@ class CartModel extends ChangeNotifier {
   }
 }
 
-class BasicProvider extends BaseStatefulScreen {
+class BasicProvider extends BaseStatefulPage {
   get title => 'Basic provider demo';
 
   @override
   _BasicProviderState createState() => _BasicProviderState();
 }
 
-class _BasicProviderState extends BaseScreenState<BasicProvider> {
+class _BasicProviderState extends BasePageState<BasicProvider> {
   @override
   Widget buildSelfScrollBody(BuildContext context) {
     return Center(

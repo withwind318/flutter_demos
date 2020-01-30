@@ -1,6 +1,6 @@
 import 'package:flutter/widgets.dart';
 
-abstract class BaseStatefulScreen extends StatefulWidget {
+abstract class BaseStatefulPage extends StatefulWidget {
   get hasAppbar => true;
 
   get title => '';

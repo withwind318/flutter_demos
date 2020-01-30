@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_demos/helpers/screen_helper.dart';
 
-abstract class BaseStatelessScreen extends StatelessWidget {
+abstract class BaseStatelessPage extends StatelessWidget {
   get hasAppbar => true;
 
   get title => '';

@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_demos/router.dart';
-import 'package:flutter_demos/screens/base/base_stateless_screen.dart';
-import 'package:flutter_demos/screens/inherited_widget2.dart';
+import 'package:flutter_demos/pages/base/base_stateless_page.dart';
+import 'package:flutter_demos/pages/inherited_widget2.dart';
 import 'package:flutter_demos/widgets/my_inherited_widget.dart';
 
-class InheritedWidget1 extends BaseStatelessScreen {
+class InheritedWidget1 extends BaseStatelessPage {
   get title => 'InheritedWidget1';
 
   @override

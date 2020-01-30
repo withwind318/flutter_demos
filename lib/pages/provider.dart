@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:flutter_demos/screens/base/base_stateless_screen.dart';
+import 'package:flutter_demos/pages/base/base_stateless_page.dart';
 import 'package:provider/provider.dart';
 
-class ProviderDemo extends BaseStatelessScreen {
+class ProviderDemo extends BaseStatelessPage {
   get title => "Provider demo";
 
   final counter = CounterModel();

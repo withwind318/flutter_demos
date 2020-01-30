@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_demos/helpers/screen_helper.dart';
-import 'package:flutter_demos/screens/base/base_stateful_screen.dart';
+import 'package:flutter_demos/pages/base/base_stateful_page.dart';
 
-abstract class BaseScreenState<T extends BaseStatefulScreen> extends State<T> {
+abstract class BasePageState<T extends BaseStatefulPage> extends State<T> {
   List<Widget> actions = [];
 
   double rpx(double size) {
