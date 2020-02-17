@@ -120,7 +120,7 @@ class CartModel extends ChangeNotifier {
 }
 
 class BasicProvider extends BaseStatefulPage {
-  get title => 'Basic provider demo';
+  get title => 'Basic provider';
 
   @override
   _BasicProviderState createState() => _BasicProviderState();

@@ -1,12 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_demos/helpers/screen_helper.dart';
-import 'package:flutter_demos/router.dart';
 import 'package:flutter_demos/pages/base/base_page_state.dart';
 import 'package:flutter_demos/pages/base/base_stateful_page.dart';
-import 'package:flutter_demos/pages/basic_provider.dart';
-import 'package:flutter_demos/pages/inherited_widget1.dart';
-import 'package:flutter_demos/pages/provider.dart';
-import 'package:flutter_demos/pages/stream_1.dart';
+import 'package:flutter_demos/pages/state_management/basic_provider.dart';
+import 'package:flutter_demos/pages/state_management/bloc.dart';
+import 'package:flutter_demos/pages/state_management/infinite_list/post_page.dart';
+import 'package:flutter_demos/pages/state_management/inherited_widget1.dart';
+import 'package:flutter_demos/pages/state_management/provider.dart';
+import 'package:flutter_demos/pages/state_management/stream_1.dart';
+import 'package:flutter_demos/pages/state_management/ticker/ticker_page.dart';
+import 'package:flutter_demos/router.dart';
 import 'package:flutter_demos/theme/theme.dart';
 import 'package:flutter_demos/widgets/click_item.dart';
 
@@ -29,30 +32,51 @@ class _HomeState extends BasePageState<Home> {
     return Column(
       children: <Widget>[
         ClickItem(
-          title: 'InheritedWidget demo',
+          title: 'InheritedWidget',
           onTap: () {
             Router.push(context, InheritedWidget1());
           },
         ),
         Divider(color: AppColors.dividerColor, height: rpx(1), indent: rpx(30)),
         ClickItem(
-          title: 'Provider demo',
+          title: 'Provider',
           onTap: () {
             Router.push(context, ProviderDemo());
           },
         ),
         Divider(color: AppColors.dividerColor, height: rpx(1), indent: rpx(30)),
         ClickItem(
-          title: 'Basic provider demo',
+          title: 'Basic provider',
           onTap: () {
             Router.push(context, BasicProvider());
           },
         ),
         Divider(color: AppColors.dividerColor, height: rpx(1), indent: rpx(30)),
         ClickItem(
-          title: 'Stream demo 1',
+          title: 'Stream 1',
           onTap: () {
             Router.push(context, Stream1());
+          },
+        ),
+        Divider(color: AppColors.dividerColor, height: rpx(1), indent: rpx(30)),
+        ClickItem(
+          title: 'Bloc counter',
+          onTap: () {
+            Router.push(context, BlocPage());
+          },
+        ),
+        Divider(color: AppColors.dividerColor, height: rpx(1), indent: rpx(30)),
+        ClickItem(
+          title: 'Bloc ticker',
+          onTap: () {
+            Router.push(context, TickerPage());
+          },
+        ),
+        Divider(color: AppColors.dividerColor, height: rpx(1), indent: rpx(30)),
+        ClickItem(
+          title: 'Bloc infinite scroll',
+          onTap: () {
+            Router.push(context, PostPage());
           },
         ),
         Divider(color: AppColors.dividerColor, height: rpx(1), indent: rpx(30)),

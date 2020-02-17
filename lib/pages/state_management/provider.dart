@@ -4,7 +4,7 @@ import 'package:flutter_demos/pages/base/base_stateless_page.dart';
 import 'package:provider/provider.dart';
 
 class ProviderDemo extends BaseStatelessPage {
-  get title => "Provider demo";
+  get title => "Provider";
 
   final counter = CounterModel();
 

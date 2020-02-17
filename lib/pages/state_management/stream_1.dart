@@ -5,7 +5,7 @@ import 'package:flutter_demos/pages/base/base_page_state.dart';
 import 'package:flutter_demos/pages/base/base_stateful_page.dart';
 
 class Stream1 extends BaseStatefulPage {
-  get title => 'Stream demo 1';
+  get title => 'Stream 1';
   @override
   _Stream1State createState() => _Stream1State();
 }
