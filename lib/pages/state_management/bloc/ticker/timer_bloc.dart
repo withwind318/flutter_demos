@@ -1,7 +1,7 @@
 import 'dart:async';
-import 'package:flutter_demos/pages/state_management/ticker/ticker.dart';
-import 'package:flutter_demos/pages/state_management/ticker/timer_event.dart';
-import 'package:flutter_demos/pages/state_management/ticker/timer_state.dart';
+import 'package:flutter_demos/pages/state_management/bloc/ticker/ticker.dart';
+import 'package:flutter_demos/pages/state_management/bloc/ticker/timer_event.dart';
+import 'package:flutter_demos/pages/state_management/bloc/ticker/timer_state.dart';
 import 'package:meta/meta.dart';
 import 'package:bloc/bloc.dart';
 

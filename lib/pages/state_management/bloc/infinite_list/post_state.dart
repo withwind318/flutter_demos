@@ -1,5 +1,5 @@
 import 'package:equatable/equatable.dart';
-import 'package:flutter_demos/pages/state_management/infinite_list/post.dart';
+import 'package:flutter_demos/pages/state_management/bloc/infinite_list/post.dart';
 
 abstract class PostState extends Equatable {
   const PostState();

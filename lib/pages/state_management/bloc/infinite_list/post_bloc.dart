@@ -1,9 +1,9 @@
 import 'dart:convert';
 
 import 'package:bloc/bloc.dart';
-import 'package:flutter_demos/pages/state_management/infinite_list/post.dart';
-import 'package:flutter_demos/pages/state_management/infinite_list/post_event.dart';
-import 'package:flutter_demos/pages/state_management/infinite_list/post_state.dart';
+import 'package:flutter_demos/pages/state_management/bloc/infinite_list/post.dart';
+import 'package:flutter_demos/pages/state_management/bloc/infinite_list/post_event.dart';
+import 'package:flutter_demos/pages/state_management/bloc/infinite_list/post_state.dart';
 import 'package:http/http.dart' as http;
 import 'package:meta/meta.dart';
 import 'package:rxdart/rxdart.dart';

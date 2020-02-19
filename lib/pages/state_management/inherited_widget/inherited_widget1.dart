@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_demos/router.dart';
 import 'package:flutter_demos/pages/base/base_stateless_page.dart';
-import 'package:flutter_demos/pages/state_management/inherited_widget2.dart';
+import 'package:flutter_demos/pages/state_management/inherited_widget/inherited_widget2.dart';
 import 'package:flutter_demos/widgets/my_inherited_widget.dart';
 
 class InheritedWidget1 extends BaseStatelessPage {

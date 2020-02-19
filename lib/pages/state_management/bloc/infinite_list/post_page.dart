@@ -2,10 +2,10 @@ import 'package:bloc/bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_demos/pages/state_management/infinite_list/post.dart';
-import 'package:flutter_demos/pages/state_management/infinite_list/post_bloc.dart';
-import 'package:flutter_demos/pages/state_management/infinite_list/post_event.dart';
-import 'package:flutter_demos/pages/state_management/infinite_list/post_state.dart';
+import 'package:flutter_demos/pages/state_management/bloc/infinite_list/post.dart';
+import 'package:flutter_demos/pages/state_management/bloc/infinite_list/post_bloc.dart';
+import 'package:flutter_demos/pages/state_management/bloc/infinite_list/post_event.dart';
+import 'package:flutter_demos/pages/state_management/bloc/infinite_list/post_state.dart';
 import 'package:http/http.dart' as http;
 
 class SimpleBlocDelegate extends BlocDelegate {

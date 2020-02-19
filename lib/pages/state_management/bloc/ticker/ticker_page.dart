@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_demos/pages/state_management/ticker/ticker.dart';
-import 'package:flutter_demos/pages/state_management/ticker/timer_bloc.dart';
-import 'package:flutter_demos/pages/state_management/ticker/timer_event.dart';
-import 'package:flutter_demos/pages/state_management/ticker/timer_state.dart';
+import 'package:flutter_demos/pages/state_management/bloc/ticker/ticker.dart';
+import 'package:flutter_demos/pages/state_management/bloc/ticker/timer_bloc.dart';
+import 'package:flutter_demos/pages/state_management/bloc/ticker/timer_event.dart';
+import 'package:flutter_demos/pages/state_management/bloc/ticker/timer_state.dart';
 import 'package:wave/config.dart';
 import 'package:wave/wave.dart';
 

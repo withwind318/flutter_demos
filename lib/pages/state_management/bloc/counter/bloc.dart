@@ -2,19 +2,19 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_demos/pages/base/base_stateless_page.dart';
-import 'package:flutter_demos/pages/blocs/counter_bloc.dart';
+import 'package:flutter_demos/pages/state_management/bloc/counter/counter_bloc.dart';
 
 class BlocPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocProvider<CounterBloc>(
       create: (BuildContext context) => CounterBloc(),
-      child: Counter(),
+      child: BlocCounter(),
     );
   }
 }
 
-class Counter extends BaseStatelessPage {
+class BlocCounter extends BaseStatelessPage {
   get title => 'Bloc counter';
 
   @override
