@@ -7,11 +7,13 @@ import 'package:flutter_demos/pages/state_management/bloc.dart';
 import 'package:flutter_demos/pages/state_management/infinite_list/post_page.dart';
 import 'package:flutter_demos/pages/state_management/inherited_widget1.dart';
 import 'package:flutter_demos/pages/state_management/provider.dart';
+import 'package:flutter_demos/pages/state_management/redux/counter/counter.dart';
 import 'package:flutter_demos/pages/state_management/stream_1.dart';
 import 'package:flutter_demos/pages/state_management/ticker/ticker_page.dart';
 import 'package:flutter_demos/router.dart';
 import 'package:flutter_demos/theme/theme.dart';
 import 'package:flutter_demos/widgets/click_item.dart';
+import 'package:redux/redux.dart';
 
 class Home extends BaseStatefulPage {
   get title => 'Basic demos';
@@ -77,6 +79,14 @@ class _HomeState extends BasePageState<Home> {
           title: 'Bloc infinite scroll',
           onTap: () {
             Router.push(context, PostPage());
+          },
+        ),
+        Divider(color: AppColors.dividerColor, height: rpx(1), indent: rpx(30)),
+        ClickItem(
+          title: 'Redux counter',
+          onTap: () {
+            final store = Store<int>(counterReducer, initialState: 0);
+            Router.push(context, ReduxCounter(title: 'Redux counter', store: store));
           },
         ),
         Divider(color: AppColors.dividerColor, height: rpx(1), indent: rpx(30)),
