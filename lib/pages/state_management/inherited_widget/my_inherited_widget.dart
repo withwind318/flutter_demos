@@ -1,5 +1,5 @@
 import 'package:flutter/widgets.dart';
-import 'package:flutter_demos/widgets/app_state/state_container.dart';
+import 'package:flutter_demos/pages/state_management/inherited_widget/state_container.dart';
 
 class MyInheritedWidget extends InheritedWidget {
   final StateContainerState data;

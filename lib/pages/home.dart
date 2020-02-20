@@ -6,7 +6,7 @@ import 'package:flutter_demos/pages/state_management/bloc/counter/bloc.dart';
 import 'package:flutter_demos/pages/state_management/bloc/infinite_list/post_page.dart';
 import 'package:flutter_demos/pages/state_management/bloc/stream_1.dart';
 import 'package:flutter_demos/pages/state_management/bloc/ticker/ticker_page.dart';
-import 'package:flutter_demos/pages/state_management/inherited_widget/inherited_widget1.dart';
+import 'package:flutter_demos/pages/state_management/inherited_widget/inherited_widget_counter.dart';
 import 'package:flutter_demos/pages/state_management/provider/basic_provider.dart';
 import 'package:flutter_demos/pages/state_management/provider/provider.dart';
 import 'package:flutter_demos/pages/state_management/redux/counter/counter.dart';
@@ -34,16 +34,9 @@ class _HomeState extends BasePageState<Home> {
     return Column(
       children: <Widget>[
         ClickItem(
-          title: 'InheritedWidget',
+          title: 'Inherited widget counter',
           onTap: () {
-            Router.push(context, InheritedWidget1());
-          },
-        ),
-        Divider(color: AppColors.dividerColor, height: rpx(1), indent: rpx(30)),
-        ClickItem(
-          title: 'Provider',
-          onTap: () {
-            Router.push(context, ProviderDemo());
+            Router.push(context, InheritedWidgetCounter());
           },
         ),
         Divider(color: AppColors.dividerColor, height: rpx(1), indent: rpx(30)),
@@ -51,6 +44,13 @@ class _HomeState extends BasePageState<Home> {
           title: 'Basic provider',
           onTap: () {
             Router.push(context, BasicProvider());
+          },
+        ),
+        Divider(color: AppColors.dividerColor, height: rpx(1), indent: rpx(30)),
+        ClickItem(
+          title: 'Provider',
+          onTap: () {
+            Router.push(context, ProviderDemo());
           },
         ),
         Divider(color: AppColors.dividerColor, height: rpx(1), indent: rpx(30)),

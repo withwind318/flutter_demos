@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_demos/pages/base/base_page_state.dart';
 import 'package:flutter_demos/pages/base/base_stateful_page.dart';
-import 'package:flutter_demos/widgets/my_inherited_widget.dart';
+import 'package:flutter_demos/pages/state_management/inherited_widget/my_inherited_widget.dart';
 
 class InheritedWidget2 extends BaseStatefulPage {
   get title => 'InheritedWidget2';

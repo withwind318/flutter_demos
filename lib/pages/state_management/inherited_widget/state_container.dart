@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:flutter_demos/widgets/my_inherited_widget.dart';
+import 'package:flutter_demos/pages/state_management/inherited_widget/my_inherited_widget.dart';
 
 class StateContainer extends StatefulWidget {
   final Widget child;

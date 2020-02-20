@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_demos/pages/home.dart';
-import 'package:flutter_demos/widgets/app_state/state_container.dart';
 
-//void main() => runApp(MyApp());
-void main() => runApp(StateContainer(child: MyApp()));
+void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   @override
