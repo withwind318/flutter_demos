@@ -2,18 +2,18 @@ import 'package:flutter/material.dart';
 import 'package:flutter_demos/helpers/screen_helper.dart';
 import 'package:flutter_demos/pages/base/base_page_state.dart';
 import 'package:flutter_demos/pages/base/base_stateful_page.dart';
-import 'package:flutter_demos/pages/state_management/bloc/ticker/ticker_page.dart';
-import 'package:flutter_demos/pages/state_management/provider/basic_provider.dart';
 import 'package:flutter_demos/pages/state_management/bloc/counter/bloc.dart';
 import 'package:flutter_demos/pages/state_management/bloc/infinite_list/post_page.dart';
+import 'package:flutter_demos/pages/state_management/bloc/stream_1.dart';
+import 'package:flutter_demos/pages/state_management/bloc/ticker/ticker_page.dart';
 import 'package:flutter_demos/pages/state_management/inherited_widget/inherited_widget1.dart';
+import 'package:flutter_demos/pages/state_management/provider/basic_provider.dart';
 import 'package:flutter_demos/pages/state_management/provider/provider.dart';
 import 'package:flutter_demos/pages/state_management/redux/counter/counter.dart';
-import 'package:flutter_demos/pages/state_management/bloc/stream_1.dart';
+import 'package:flutter_demos/pages/state_management/redux/github_search/main.dart';
 import 'package:flutter_demos/router.dart';
 import 'package:flutter_demos/theme/theme.dart';
 import 'package:flutter_demos/widgets/click_item.dart';
-import 'package:redux/redux.dart';
 
 class Home extends BaseStatefulPage {
   get title => 'Basic demos';
@@ -85,8 +85,14 @@ class _HomeState extends BasePageState<Home> {
         ClickItem(
           title: 'Redux counter',
           onTap: () {
-            final store = Store<int>(counterReducer, initialState: 0);
-            Router.push(context, ReduxCounter(title: 'Redux counter', store: store));
+            Router.push(context, ReduxCounter(title: 'Redux counter'));
+          },
+        ),
+        Divider(color: AppColors.dividerColor, height: rpx(1), indent: rpx(30)),
+        ClickItem(
+          title: 'Redux github search',
+          onTap: () {
+            Router.push(context, ReduxGithubSearch());
           },
         ),
         Divider(color: AppColors.dividerColor, height: rpx(1), indent: rpx(30)),

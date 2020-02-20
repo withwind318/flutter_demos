@@ -20,13 +20,15 @@ dependencies:
   flutter:
     sdk: flutter
   provider: ^4.0.1
-  bloc: ^3.0.0
   flutter_bloc: ^3.1.0
   equatable: ^1.0.0
   wave: ^0.0.8
   http: ^0.12.0
   cupertino_icons: ^0.1.2
   flutter_redux: ^0.6.0
+  redux_epics: ^0.13.0
+  rxdart: ^0.23.1
+  transparent_image: ^1.0.0
 
 dev_dependencies:
   flutter_test:

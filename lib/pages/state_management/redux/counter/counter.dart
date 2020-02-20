@@ -16,10 +16,10 @@ int counterReducer(int state, dynamic action) {
 }
 
 class ReduxCounter extends StatelessWidget {
-  final Store<int> store;
+  final Store<int> store = Store<int>(counterReducer, initialState: 0);
   final String title;
 
-  ReduxCounter({Key key, this.store, this.title}) : super(key: key);
+  ReduxCounter({Key key, this.title}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
